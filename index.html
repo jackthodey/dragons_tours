@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Japan Bike Tour</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function updateClock() {
+      const clock = document.getElementById('clock');
+      const now = new Date();
+      const tokyoTime = now.toLocaleTimeString('en-US', { timeZone: 'Asia/Tokyo' });
+      clock.textContent = tokyoTime;
+    }
+    setInterval(updateClock, 1000);
+  </script>
+</head>
+<body onload="updateClock()">
+  <header>
+    <h1>:: Japan Bike Tour Zone ::</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="tour.html">Tour Details</a>
+      <a href="kit.html">Kit</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="widget">
+    <marquee behavior="scroll" direction="left">
+      🚴 Welcome to the Japan Bike Tour Zone! 🚴 Plan your ride, find your kit, and discover magical routes. 🌸
+    </marquee>
+    <div class="widget-clock">
+      Current Time in Tokyo: <span id="clock"></span>
+    </div>
+  </div>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Type your journey..." name="search" />
+    <a href="ramdas.html">Search</a>
+  </div>
+
+  <section>
+    <h2>Scenic Views from Hokkaido</h2>
+    <div class="section-content">
+      <img src="images/bike1.jpg" alt="Bike Tour 1" />
+      <a href="#">Tour Map</a>
+      <a href="#">Gear Recommendations</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Cultural Rides in Kyoto</h2>
+    <div class="section-content">
+      <img src="images/bike2.jpg" alt="Bike Tour 2" />
+      <a href="#">Temple Routes</a>
+      <a href="#">Food Stops</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Mountain Passes to Conquer</h2>
+    <div class="section-content">
+      <img src="images/bike3.jpg" alt="Bike Tour 3" />
+      <a href="#">Training Tips</a>
+      <a href="#">Weather Watch</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Urban Cruises: Tokyo Edition</h2>
+    <div class="section-content">
+      <img src="images/bike4.jpg" alt="Bike Tour 4" />
+      <a href="#">Night Rides</a>
+      <a href="#">Photography Tips</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>More to Explore</h2>
+    <div class="section-content">
+      <a href="#">Tour News</a>
+      <a href="#">Latest Rider Blogs</a>
+      <a href="#">Safety Updates</a>
+      <a href="#">Join Our Newsletter</a>
+      <a href="#">FAQs</a>
+      <a href="#">Testimonials</a>
+    </div>
+  </section>
+</body>
+</html>
